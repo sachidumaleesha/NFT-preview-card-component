@@ -3,31 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="bg-[#0d192b] min-h-screen flex justify-center items-center w-full">
+    <div class="bg-[#14253d] text-white rounded-2xl flex flex-col justify-center max-w-[400px] gap-5 p-10 mx-5">
+      <div>
+        <img src="./images/image-equilibrium.jpg" alt="equilibrium" class="w-80 h-80 rounded-xl">
+      </div>
+      <div>
+        <h1 class="text-3xl font-semibold">Equilibrium #3429</h1>
+      </div>
+      <div>
+        <p class="text-lg ">Our Equilibrium collection promotes balance and clam.</p>
+      </div>
+      <div class="flex justify-between">
+        <div class="flex items-center gap-2">
+          <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+          <p class="font-semibold text-[#00fff7]">0.041ETH</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+          <p>3 days left</p>
+        </div>
+      </div>
+      <div>
+        <hr class="text-gray-100">
+      </div>
+      <div class="flex items-center gap-5">
+        <img src="./images/image-avatar.png" alt="avatar" class="w-10 h-10 border rounded-full">
+        <p class="text-[18px]"><span class="text-[#8bacda]">Creation of</span> Jules Wyvern</p>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
